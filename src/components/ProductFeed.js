@@ -1,6 +1,6 @@
 import React from 'react'
 import Product from './Product'
-import { useSession } from 'next-auth/react'
+// import { useSession } from 'next-auth/react'
 
 const ProductFeed = ({ products }) => {
   return (
