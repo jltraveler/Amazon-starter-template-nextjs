@@ -18,15 +18,15 @@ return (
 
 <Image src={image} height={200} width={200} objectfit="contain"/>
 
-<h4>{title}</h4>
+<h4 className='my-3'>{title}</h4>
 <div className='flex'>
     {Array(rating)
     .fill()
     .map((_, i) => (
 <StarIcon className='h-5 text-yellow-500'/>
     ))}
-
-    </div>
+        </div>
+        
     <p className='text-xs my-2 line-clamp-2'>{description}</p>
 
     <div className='mb-5'>

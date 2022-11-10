@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Banner from "../components/Banner";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import ProductFeed from "../components/ProductFeed";
+import React from 'react'
 
 export default function Home({products}) {
     return ( 
