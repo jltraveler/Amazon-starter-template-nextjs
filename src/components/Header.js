@@ -4,7 +4,8 @@ import {
   MenuIcon, 
   SearchIcon, 
   ShoppingCartIcon
-} from "@heroicons/react/outline";
+} from "@heroicons/react/outline"; 
+import { signIn, signOut, useSession} from 'next-auth/react'
 
 function Header() {
   return (
@@ -15,7 +16,7 @@ function Header() {
             src="https://links.papareact.com/f90"
             width={150}
             height={40}
-            objectFit='contain'
+            objectfit='contain'
             className='' />
           </div>
           <div className='hidden sm:flex items-center h-10 rounded-md flex-grow  bg-yellow-400 hover:bg-yellow-500'>
@@ -23,8 +24,11 @@ function Header() {
             <SearchIcon className='h-12 p-4'/>
           </div>
           <div className='text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap'>
-            <div className='link'>
-              <p>Hello!</p>
+          <div
+            onClick={signIn}
+            className='cursor-pointer link'>
+              
+            
               <p className='font-extrabold md:text-sm'>Account & Lists</p>
             </div>
             <div className='link'>

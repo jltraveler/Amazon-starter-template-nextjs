@@ -19,7 +19,6 @@ return (
 <Image src={image} height={200} width={200} objectfit="contain"/>
 
 <h4>{title}</h4>
-
 <div className='flex'>
     {Array(rating)
     .fill()
